@@ -57,13 +57,4 @@ public class OpportunityConverter {
             o.setUpdatedAt(ov.getUpdatedAt());
         }
 
-
-        public static void copyModelToView(Opportunity o, OpportunityView ov) {
-            ov.setId(o.getId());
-            ov.setClient(ClientConverter.toView(o.getClient()));
-            ov.setEmployee(EmployeeConverter.toView(o.getEmployee()));
-            ov.setTitle(o.getTitle());
-            ov.setCreatedAt(o.getCreatedAt());
-            ov.setUpdatedAt(o.getUpdatedAt());
-        }
 }

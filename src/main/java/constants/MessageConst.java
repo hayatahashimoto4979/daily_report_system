@@ -19,7 +19,11 @@ public enum MessageConst {
     E_CLI_CODE_EXIST("入力されたお客様番号の情報は既に存在しています。"),
     E_NOTITLE("タイトルを入力してください。"),
     E_NOCONTENT("内容を入力してください。"),
-    E_NOAVEGACE("月間平均売上を入力してください。");
+    E_NOAVEGACE("月間平均売上を入力してください。"),
+    E_NOOPPTITLE("商談タイトルを入力してください。"),
+    E_NOITEM("商談項目を入力してください。"),
+    E_NOPROSPECT("見込ランクを入力してください。"),
+    E_NOSTATUS("商談状況を入力してください。");
 
 
 

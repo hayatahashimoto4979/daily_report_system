@@ -55,12 +55,26 @@ public interface JpaConst {
     String OPP_COL_UPDATED_AT = "updated_at";
 
 
+    String TABLE_PRO = "progress";
+
+    String PRO_COL_ID = "id";
+    String PRO_COL_EMP = "employee_id";
+    String PRO_COL_CLI = "client_id";
+    String PRO_COL_OPP = "opportunity_id";
+    String PRO_COL_DATE = "progress_date";
+    String PRO_COL_ITEM = "item";
+    String PRO_COL_PROSPECT = "prospect";
+    String PRO_COL_STATUS = "status";
+    String PRO_COL_CONTENT = "content";
+    String PRO_COL_CREATED_AT = "created_at";
+    String PRO_COL_UPDATED_AT = "updated_at";
 
 
     String ENTITY_EMP = "employee";
     String ENTITY_REP = "report";
     String ENTITY_CLI = "client";
     String ENTITY_OPP = "opportunity";
+    String ENTITY_PRO = "progress";
 
     String JPQL_PARM_CODE = "code";
     String JPQL_PARM_PASSWORD = "password";
@@ -122,6 +136,19 @@ public interface JpaConst {
 
     String Q_OPP_COUNT_ALL_MINE = ENTITY_OPP + ".countAllMine";
     String Q_OPP_COUNT_ALL_MINE_DEF = "SELECT COUNT(o) FROM Opportunity AS o WHERE o.employee = :" + JPQL_PARM_EMPLOYEE;
+
+
+    String Q_PRO_GET_ALL = ENTITY_PRO + ".getAll";
+    String Q_PRO_GET_ALL_DEF = "SELECT p FROM Progress AS p ORDER BY p.id DESC";
+
+    String Q_PRO_COUNT = ENTITY_PRO + ".count";
+    String Q_PRO_COUNT_DEF = "SELECT COUNT(p) FROM Progress AS p";
+
+    String Q_PRO_GET_ALL_MINE = ENTITY_PRO + ".getAllMine";
+    String Q_PRO_GET_ALL_MINE_DEF = "SELECT p FROM Progress AS p WHERE p.employee = :" + JPQL_PARM_EMPLOYEE + " ORDER BY p.id DESC";
+
+    String Q_PRO_COUNT_ALL_MINE = ENTITY_PRO + ".countAllMine";
+    String Q_PRO_COUNT_ALL_MINE_DEF = "SELECT COUNT(p) FROM Progress AS p WHERE p.employee = :" + JPQL_PARM_EMPLOYEE;
 
 
 

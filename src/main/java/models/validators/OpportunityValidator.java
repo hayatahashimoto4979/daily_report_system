@@ -21,7 +21,7 @@ public class OpportunityValidator {
 
     private static String validateTitle(String title) {
         if (title == null || title.equals("")) {
-            return MessageConst.E_NOTITLE.getMessage();
+            return MessageConst.E_NOOPPTITLE.getMessage();
         }
 
         return "";

@@ -63,14 +63,4 @@ public class ClientConverter {
 
     }
 
-    public static void copyModelToView(Client c, ClientView cv) {
-        cv.setId(c.getId());
-        cv.setCode(c.getCode());
-        cv.setContent(c.getContent());
-        cv.setEmployeeRepresentative(EmployeeConverter.toView(c.getEmployeeRepresentative()));
-        cv.setAverage_sales(c.getAverage_sales());
-        cv.setText(c.getText());
-        cv.setCreatedAt(c.getCreatedAt());
-        cv.setUpdatedAt(c.getUpdatedAt());
-    }
 }

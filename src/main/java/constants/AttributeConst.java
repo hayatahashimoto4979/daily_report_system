@@ -69,11 +69,22 @@ public enum AttributeConst {
     OPP_ID("id"),
     OPP_CLIENT("client_id"),
     OPP_SELECTED("selected_id"),
-    OPP_TITLE("opp_title");
+    OPP_TITLE("opp_title"),
 
     //商談状況
-
-
+    PROGRESS("progress"),
+    PROGRESSES("progresses"),
+    PRO_COUNT("progresses_count"),
+    PRO_ID("id"),
+    PRO_SELECTED("selected_id"),
+    PRO_EMP("employee_id"),
+    PRO_CLI("client_id"),
+    PRO_OPP("opportunity_id"),
+    PRO_DATE("progress_date"),
+    PRO_ITEM("item"),
+    PRO_PROSPECT("prospect"),
+    PRO_STATUS("status"),
+    PRO_CONTENT("content");
 
 
 

@@ -8,6 +8,7 @@ public enum ForwardConst {
     ACT_REP("Report"),
     ACT_CLI("Client"),
     ACT_OPP("Opportunity"),
+    ACT_PRO("Progress"),
     ACT_AUTH("Auth"),
 
     CMD("command"),
@@ -22,6 +23,11 @@ public enum ForwardConst {
     CMD_EDIT("edit"),
     CMD_UPDATE("update"),
     CMD_DESTROY("destroy"),
+    CMD_PRO_NEW("pro_entryNew"),
+    CMD_PRO_SHOW("pro_show"),
+    CMD_PRO_CREATE("pro_create"),
+    CMD_PRO_EDIT("pro_edit"),
+    CMD_PRO_UPDATE("pro_update"),
 
     FW_ERR_UNKNOWN("error/unknown"),
     FW_TOP_INDEX("topPage/index"),
@@ -45,7 +51,11 @@ public enum ForwardConst {
     FW_OPP_INDEX("opportunities/index"),
     FW_OPP_SHOW("opportunities/show"),
     FW_OPP_NEW("opportunities/new"),
-    FW_OPP_EDIT("opportunities/edit");
+    FW_OPP_EDIT("opportunities/edit"),
+    FW_OPP_PRO_SHOW("progresses/pro_show"),
+    FW_OPP_PRO_NEW("progresses/pro_new"),
+    FW_OPP_PRO_EDIT("progresses/pro_edit");
+
 
 
 
